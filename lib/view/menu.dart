@@ -11,7 +11,7 @@ class Menu extends StatelessWidget {
         body: Center(
             child:
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-      criarBotao('Primeiro botão', () => print('Hello Word!')),
+      Expanded(child: criarBotao('Primeiro botão', () => print('Hello Word!'))),
       criarBotao('Calcular idade',
           () => Navigator.popAndPushNamed(context, '/CalcularIdade')),
       criarBotao('Hello Word!',
